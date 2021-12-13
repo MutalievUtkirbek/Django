@@ -8,9 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-{% extends 'navbar.html' %}
-{% block content %}
-<h1>Home page</h1>
-{% endblock content %}
+    <header>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+    </header>
+    {% block content %}
+    {% endblock content %}
 </body>
 </html>
