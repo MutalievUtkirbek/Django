@@ -13,7 +13,7 @@
 <h1>News</h1>
 <ul>
     {% for post in object_list %}
-    <li>{{post.title}}</li>
+    <li><a href="{% url 'post' post.pk %}">{{post.title}}</a>  </li>
     {% endfor %}
 </ul>
 {% endblock content %}

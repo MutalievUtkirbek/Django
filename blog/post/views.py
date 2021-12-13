@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from .models import Post
 
@@ -14,4 +14,9 @@ class aboutPageView(TemplateView):
 
 class postPageView(ListView):
     template_name = 'post.html'
+    model = Post
+
+
+class postDetailView(DetailView):
+    template_name = 'post_detail.html'
     model = Post
