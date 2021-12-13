@@ -10,11 +10,11 @@
 <body>
 {% extends 'navbar.html' %}
 {% block content %}
-    <h1>News</h1>
+<h1>News</h1>
 <ul>
     {% for post in object_list %}
     <li>{{post.title}}</li>
-    {% endfor  %}
+    {% endfor %}
 </ul>
 {% endblock content %}
 </body>
